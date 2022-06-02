@@ -10,13 +10,14 @@ export default mergeConfig(
       fs: {
         strict: true,
       },
+      port: '3001',
     },
     plugins: [
-      eslint({
-        cache: false,
-        include: ['src/**/*.ts', 'src/**/*.tsx', 'src/**/*.vue'],
-        exclude: ['node_modules'],
-      }),
+      // eslint({
+      //   cache: false,
+      //   include: ['src/**/*.ts', 'src/**/*.tsx', 'src/**/*.vue'],
+      //   exclude: ['node_modules'],
+      // }),
     ],
   },
   baseConig

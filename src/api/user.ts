@@ -8,10 +8,11 @@ export interface LoginData {
 }
 
 export interface LoginRes {
-  token: string;
+  access_token: string;
 }
+
 export function login(data: LoginData) {
-  return axios.post<LoginRes>('/api/user/login', data);
+  return axios.post<LoginRes>('/auth/login', data);
 }
 
 export function logout() {
