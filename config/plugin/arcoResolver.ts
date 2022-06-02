@@ -6,7 +6,10 @@
  * Although the Pro project is full of imported components, this plugin will be used by default.
  * 虽然Pro项目中是全量引入组件，但此插件会默认使用。
  */
+
+// eslint-disable-next-line
 import Components from 'unplugin-vue-components/vite';
+// eslint-disable-next-line
 import { ArcoResolver } from 'unplugin-vue-components/resolvers';
 
 export default function configArcoResolverPlugin() {
